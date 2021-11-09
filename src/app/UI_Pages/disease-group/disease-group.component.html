@@ -1,0 +1,32 @@
+
+
+ <!-- <div class="table">
+<table class="table table:striped">
+    <th> Disease Group </th>
+
+    <tbody>
+      <tr *ngFor="let ct of cts" >
+        <td>
+            <button class="btn btn-info">{{ct.diseasegroup}}</button></td>
+      </tr>
+    </tbody>
+</table>
+</div>   -->
+<html>
+    <div class="container">
+        <h3 style="padding-left: 50px;"> Disease Group</h3>
+<div class="buttons">
+    <ul *ngFor="let ct of cts">
+        <button type="button" (click)="displaydiseases(ct)">{{ct}}</button>
+        </ul>
+
+</div>
+</div>
+</html>
+
+
+
+
+
+
+

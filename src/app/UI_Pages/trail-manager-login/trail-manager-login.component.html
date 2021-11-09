@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <div class = "row1">
+            <h4 style="font-family: 'Lucida';font-size:32px;">Trail Manager Login</h4>
+            <form [formGroup]="trialManagerLoginForm" (ngSubmit)="login()">
+            <input type="text" formControlName = "username" placeholder="Enter your username"><br>
+            <input type="password" formControlName ="password" placeholder="Enter your password"><br>
+            <input type="submit" name ="submit" value = "Login"><br>
+        </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+    <body>
+          <div class="topnav">
+            <button class="buttonStyle" [ngClass]="{highlightButton:!hideProfile}" (click)="profileclicked()">Profile</button>
+            <button class="buttonStyle" [ngClass]="{highlightButton:!hidePatientlist}" (click)="patientlistclicked()">Patient List</button>  
+            <button class="buttonStyle" [ngClass]="{highlightButton:!hideClinicaltrial}" (click)="clinicaltrialclicked()">Clinical Trial</button>
+            
+              <div class="topnav-right">
+                  <a href="#logout">Logout</a>
+              </div>
+          </div>
+        <div class = "container" [hidden]="hideProfile">
+            <label for="firstname"> First Name </label>
+            <input type = "text" name ="FirstName" [(ngModel)]="employee.first_name" align="left"><br>
+            <label for="lastname"> Last Name </label>
+            <input type = "text" name ="LastName" [(ngModel)]="employee.last_name" align ="left"><br>
+            <label for="mobile"> Mobile </label>
+            <input type = "text" name ="Mobile" [(ngModel)]="employee.mobile" align ="left"><br>
+            <label for="address">Address</label>
+            <input type = "text" name ="Address" [(ngModel)]="employee.address" align ="left"><br>
+            <label for="department">Department </label>
+            <input type = "text" name ="Department" [(ngModel)]="employee.department" align ="left"><br>
+            <label for="role">Role </label>
+            <input type = "text" name ="Role"  [(ngModel)]="employee.role" align ="left"><br>
+            <label for="mail">Mail </label> 
+            <input type = "text" name ="Mail" [(ngModel)]="employee.mail" align ="left"><br>
+            <label for="gender">Gender </label> 
+            <label for=male>Male</label>
+            <input type = "radio" name ="Gender" [(ngModel)]="employee.gender">
+            <label for=female>Female</label>
+            <input type = "radio" name ="Gender" >
+            <label for=other>Other</label>
+            <input type = "radio" name ="Gender" ><br>
+            <label for="username">Username </label>
+            <input type = "text" name ="Username" [(ngModel)]="employee.user_id" align ="left"><br><br>
+            <label for="password">Password </label>
+            <input type = "password" name ="Password" [(ngModel)]="employee.password" align ="left"><br>
+            <input type="button" name = "save" value="Update Profile" (click)="onclicksave()">
+        </div>
+        <app-patient-list [hidden]="hidePatientlist"></app-patient-list>
+        <app-clinical-trail [hidden]="hideClinicaltrial"></app-clinical-trail>
+    </body>
+</html>
+
+

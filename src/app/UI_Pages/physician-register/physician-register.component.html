@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2>Physician Registration Form</h2>
+        <div class="container">
+            <form >
+            First Name <input type = "text" name ="FirstName" placeholder="Enter your firstname" [(ngModel)]="physician.first_name"><br>
+            Last Name <input type = "text" name ="LastName" placeholder="Enter youe lastname" [(ngModel)]="physician.last_name"><br>
+            Mobile <input type = "text" name ="Mobile" placeholder="+1 9090459867" [(ngModel)]="physician.mobile"><br>
+            Address <input type = "text" name ="Address" placeholder="Enter youe address" [(ngModel)]="physician.address"><br>
+            Mail <input type = "text" name ="Mail" placeholder="Enter you email " [(ngModel)]="physician.mail">
+            Department<input type = "text" name ="Department" placeholder="Enter you department "[(ngModel)]="physician.department"><br>
+            Role <input type = "text" name ="Role" placeholder="Enter you role "[(ngModel)]="physician.role">
+            Gender <input type = "radio" name ="Gender" value="Male" [(ngModel)]="physician.gender" >Male
+            <input type = "radio" name ="Gender" value ="Female" [(ngModel)]="physician.gender">Female
+            <input type = "radio" name ="Gender" value="Other" [(ngModel)]="physician.gender">Other<br>
+            Username <input type = "text" name ="Username" placeholder="Enter your username" [(ngModel)]="physician.user_id"><br>
+            Password <input type = "password" name ="Password" placeholder="Enter your Password" [(ngModel)]="physician.password"><br>
+            <input type="button" name ="Register"  (click)="onRegister()" value ="Register">
+        </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <div class = "row1">
+            <h4 style="font-family: 'Lucida';font-size:32px;">Physician Login</h4>
+            <form [formGroup]="physicianLoginForm" (ngSubmit)="onLogin()">
+            <input type="text" formControlName = "userid" placeholder="Enter your username"><br>
+            <input type="password" formControlName ="password" placeholder="Enter your password"><br>
+            <input type="submit" formControlName ="submit" value = "Login"><br>
+            New User? <a href="http://localhost:4200/PhysicianRegister">Register here</a>
+        </form>
+        </div>
+    </body>
+</html>

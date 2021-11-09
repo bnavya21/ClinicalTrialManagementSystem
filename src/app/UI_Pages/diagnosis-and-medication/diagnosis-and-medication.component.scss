@@ -1,0 +1,38 @@
+.diagnosis{
+    border:15px solid gray;
+    width: 800px;
+    padding: 30px;
+    margin:20px;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-radius: 30px;
+}
+
+.medication{
+    border:15px solid gray;
+    width: 600px;
+    padding: 30px;
+    margin:20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border-width: 2px;
+}
+table table:striped{
+    width:100px;
+}
+div.button1{
+    position:absolute;
+    right:480px;
+    top:82px;
+}
+div.button2{
+    position:relative;
+    left:380px;
+    top:5px;
+}
+div.button{
+    position:absolute;
+    right:10px;
+    top:40px;
+
+}

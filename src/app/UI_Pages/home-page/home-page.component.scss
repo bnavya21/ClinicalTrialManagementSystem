@@ -1,0 +1,26 @@
+input[type=button]{
+    background-color: rgba($color: #dd7777, $alpha: 1.0);
+    width:200px;
+    padding:10px;
+    margin:10px 100px 10px 100px;
+}
+body{
+    padding: 15px 80px 450px ;
+    background-color: cadetblue;
+    
+}
+.row{
+    padding-top: 10px;
+    background-color: cadetblue;
+}
+.con{
+   width:50%;
+   float:left;
+   
+}
+.con img{
+    float:right;
+    padding-top: 3px;
+    
+
+}

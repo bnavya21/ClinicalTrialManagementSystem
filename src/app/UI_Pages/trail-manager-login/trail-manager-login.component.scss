@@ -1,0 +1,37 @@
+.row1{
+    box-sizing: border-box;
+    border-radius: 2px;
+    width:400px;
+    padding: 70px;
+    background-color: cornsilk;
+    border-width: 4px;
+    border-color: darkgreen;
+    border:solid rgba($color: #640707, $alpha: 1.0);
+    
+}
+input[type=text] {
+    border: 1px solid rgb(15, 14, 14);
+    border-radius: 4px;
+    width:200px;
+    padding: 10px;
+    margin: 10px;
+  }
+  input[type=password] {
+    border: 1px solid rgb(15, 14, 14);
+    border-radius: 4px;
+    width:200px;
+    padding: 10px;
+    margin: 10px;
+  }
+  input[type=submit]{
+    background-color: rgba($color: #dd7777, $alpha: 1.0);
+    width:100px;
+    padding:10px;
+    margin:10px 30px 10px 50px;
+    border-radius: 10px;
+}
+body{
+    background-color: darkgrey;
+    width:auto;
+    padding: 90px;
+}

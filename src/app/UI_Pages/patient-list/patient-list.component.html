@@ -1,0 +1,37 @@
+<html>
+    
+
+
+<div [ngClass]="{ishide}"> 
+<!-- <div> -->
+    <app-diagnosis-and-medication [hidden]="ishide"></app-diagnosis-and-medication>  
+</div>
+ <div [ngClass]="{patientlist}" >  
+<!-- <div>     -->
+<div class="table" [hidden]="patientlist"> 
+    <h3 style ="padding-left: 40%;padding-top: 20px;">Patients List</h3>
+<table class="table table:striped">
+    <thead>
+        <th>MRN</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Mobile</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <!-- <a class="stretched-link" (click)="showdetails(patient.mrn)"></a> -->
+        <tr *ngFor="let patient of patients">
+            <td> {{patient.mrn}}</td>
+           <td>{{patient.first_name}}</td>
+           <td>{{patient.last_name}}</td>
+           <td>{{patient.mobile}}</td>
+           <td><button type="button" (click)="showdetails(patient.mrn)">View</button></td> 
+        </tr>
+    </tbody>
+
+</table>
+</div>
+</div>
+
+</html>
+<!-- <app-diagnosis-and-medications [hidden]></app-diagnosis-and-medications> -->

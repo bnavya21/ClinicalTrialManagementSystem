@@ -1,0 +1,43 @@
+<html>
+    <body>
+            <div class="topnav">
+               
+                <button class="buttonStyle" [ngClass]="{highlightButton:!hidePatientview}" (click)="profileClicked()">Profile</button>
+                <button class="buttonStyle" [ngClass]="{highlightButton:!hidePatientDiagnoses}" (click)="diagnosisClicked()">Diagnosis</button>
+                <button class="buttonStyle" [ngClass]="{highlightButton:!hidePatientMedications}" (click)="medicationClicked()">Medication</button>
+                <div class="topnav-right">
+                  <a>Patient Name: {{patient1.first_name}} {{patient1.last_name}}</a>
+                  <a href="#logout">Logout</a>
+                </div>
+              </div>
+        <div class = "container" [hidden]="hidePatientview">
+            <label for="fisrtname">First Name</label>  
+            <input type = "text" name ="FirstName"   [(ngModel)]="patient1.first_name" align="left"><br>
+            <label for="lastname">Last Name </label>
+            <input type = "text" name ="LastName"  align="left"  [(ngModel)]="patient1.last_name"><br>
+            <label for="mobile">Mobile </label> 
+            <input type = "text" name ="Mobile"  [(ngModel)]="patient1.mobile" align="left" ><br>
+            <label for="address">Address </label> 
+            <input type = "text" name ="Address"  align="left"  [(ngModel)]="patient1.address"><br>
+            <label for="mail">Mail </label>
+            <input type = "text" name ="Mail"  [(ngModel)]="patient1.mail"align="left"><br>
+            <label for="dob">Date of birth </label>
+            <input type = "date" name ="DOB" [(ngModel)]="patient1.date_of_birth" align="left"><br>            
+            <label for="gender">Gender </label>
+            <label for="male">Male </label>
+            <input type = "radio" name ="Gender" align="left">
+            <label for="female">Female </label>
+            <input type = "radio" name ="Gender" >
+            <label for="other">Other </label>
+            <input type = "radio" name ="Gender" ><br>
+            <label for="username">Username </label>
+            <input type = "text" name ="Username"  [(ngModel)]="patient1.user_id" align="left"><br><br>
+            <label for="password">Password </label>
+            <input type = "password" name ="Password"   [(ngModel)]="patient1.password"align="left"><br>
+            <input type="button" name = "save" value="Update Profile" (click)="onclicksave()">
+        </div>
+        <app-patient-diagnosis [hidden]="hidePatientDiagnoses"></app-patient-diagnosis>
+        <app-patient-medications [hidden]="hidePatientMedications"></app-patient-medications>
+    </body>
+</html>
+

@@ -1,0 +1,27 @@
+
+<html>
+    <!-- <div class="topnav">
+      <a href="#profile" href="/PatientView" >Profile</a>
+      <a class="active" href="#diagnosis" >Diagnosis</a>
+      <a href="#medication" href='/PatientMedication'>Medication</a>
+      <div class="topnav-right">
+      <a href="#logout">Logout</a>
+      </div>
+    </div> -->
+    <div class="table">
+    <table class="table table:striped">
+        <thead>
+            <th>Diagnosis id</th>
+            <th>Consulted Doctor</th>
+            <th>Diagnosis Date</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pd of pds">
+              <td>{{pd.diag_id}}</td>
+             <td>{{pd.emp_id}}</td>
+             <td>{{pd.DiagnosisDate}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</html>

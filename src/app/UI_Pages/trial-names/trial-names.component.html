@@ -1,0 +1,33 @@
+
+
+<!-- <igx-input-group type="search" class="search">
+    <igx-prefix>
+        <igx-icon>search</igx-icon>
+    </igx-prefix>
+    <input #search igxInput placeholder="Search Trial Name">
+    <igx-suffix *ngIf="search.value.length > 0" >
+        <igx-icon>clear</igx-icon>
+    </igx-suffix>
+</igx-input-group> )-->
+
+ <!-- <mat-nav-list>
+    <mat-list-item *ngFor="let trial of trials">
+       <a matLine href="...">{{ trial }}</a>
+         <button mat-icon-button (click)="showInfo(trial)"> 
+           <mat-icon>{{trial}}</mat-icon> 
+       </button> 
+     </mat-list-item>
+  </mat-nav-list>   -->
+<h3 style="font-family:'Lucida';padding-left : 350px;" >Clinical Trials By Title</h3>
+<h5 style="font-family: Arial, Helvetica, sans-serif;padding-left: 480px;">Select the Trial</h5>
+   <div class="list">
+    <select (change)="selectedTrialTitle($event)">
+        <option disabled>Select Title</option>
+        <option>Choose Title</option>
+        <option *ngFor="let trial of trials">
+           
+            {{trial}}</option>
+    </select> 
+   </div>  
+ <!-- <button type="button" (click)="showInfo(trial)">{{trial}} </button>-->
+  

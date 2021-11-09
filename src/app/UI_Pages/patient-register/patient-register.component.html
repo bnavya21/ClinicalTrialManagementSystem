@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2>User Registration Form</h2>
+        <div class="container">
+            <form>
+            First Name <input type = "text" name ="FirstName" placeholder="Enter your firstname" [(ngModel)]="patient.first_name" ><br>
+            Last Name <input type = "text" name ="LastName" placeholder="Enter your lastname" [(ngModel)]="patient.last_name" ><br>
+            Mobile <input type = "text" name ="Mobile" placeholder="+1 9090459867" [(ngModel)]="patient.mobile" ><br>
+            Address <input type = "text" name ="Address" placeholder="Enter your
+             address"  [(ngModel)]="patient.address"><br>
+            Mail <input type = "text" name ="Mail" placeholder="Enter you email" [(ngModel)]="patient.mail">
+            Date of birth <input type = "date" name ="DOB" [(ngModel)]="patient.date_of_birth"><br>
+            Gender <input type = "radio" name ="Gender" value="Male" [(ngModel)]="patient.gender">Male
+            <input type = "radio" name ="Gender"  value="Female" [(ngModel)]="patient.gender">Female
+            <input type = "radio" name ="Gender" value="Other" [(ngModel)]="patient.gender">Other<br>
+            Username <input type = "text" name ="Username" placeholder="Enter your username" [(ngModel)]="patient.user_id"><br>
+            Password <input type = "password" name ="Password" placeholder="Enter your Password" [(ngModel)]="patient.password"><br>
+            <input type="button" name ="Register" (click)="onRegister()" value ="Register">
+        </form>
+        </div>
+    </body>
+</html>
