@@ -75,5 +75,13 @@ export class EmployeeServiceService {
   updateEmployeeProfile(emp_id:string,physician:Physician):Observable<any>{
     return this.http.put(`${this.new_url}/${emp_id}`,physician);
   }
+
+  //to pull the report of the patients qualifying for the trial using the trial title
+    getPatientsListForTrial(name:string):Observable<any>{
+      let requestUrl=this.api_url+'/vi/trialconditionforpatients';
+      let params=new HttpParams();
+      params=params.append('name',name);
+      return this.http.get(requestUrl,{params:params});
+    }
 }
  

@@ -32,6 +32,8 @@ import { MatIconModule} from '@angular/material/icon';
 import { AddMedicationComponent } from './UI_Pages/add-medication/add-medication.component';
 import { TrialTitleDetailsComponent } from './UI_Pages/trial-title-details/trial-title-details.component';
 import { TrialManagerViewComponent } from './UI_Pages/trial-manager-view/trial-manager-view.component';
+import { PatientsReportComponent } from './UI_Pages/patients-report/patients-report.component';
+import { TrialsReportComponent } from './UI_Pages/trials-report/trials-report.component';
 
 
 
@@ -62,7 +64,9 @@ import { TrialManagerViewComponent } from './UI_Pages/trial-manager-view/trial-m
     DiagnosisAndMedicationComponent,
     AddMedicationComponent,
     TrialTitleDetailsComponent,
-    TrialManagerViewComponent
+    TrialManagerViewComponent,
+    PatientsReportComponent,
+    TrialsReportComponent
   ],
   imports: [
     BrowserModule,

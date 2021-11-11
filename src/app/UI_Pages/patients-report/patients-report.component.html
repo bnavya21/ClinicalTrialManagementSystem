@@ -1,0 +1,25 @@
+<p>patients-report works!</p>
+<div class="table"> 
+    <h3 style ="padding-left: 40%;padding-top: 20px;">Qualified Patients List for {{this.title}} </h3>
+<table class="table table:striped">
+    <thead>
+        <th>MRN</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Mobile</th>
+        <th>Mail</th>
+    </thead>
+      <tbody>
+         <tr *ngFor="let patient of patients"> 
+            <td> {{patient.mrn}}</td>
+           <td>{{patient.first_name}}</td>
+           <td>{{patient.last_name}}</td>
+           <td>{{patient.mobile}}</td>
+           <td>{{patient.mail}}</td>
+           
+        </tr>
+    </tbody>   
+
+</table>
+</div>
+

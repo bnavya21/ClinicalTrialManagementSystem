@@ -21,6 +21,8 @@ export class TrialManagerViewComponent implements OnInit {
     this.router.navigateByUrl('/TrialNames')
   }
   onclick3(){
-    
+    console.log("Pull report button is clicked")
+    this.router.navigateByUrl('/TrialsReport');
+
   }
 }
