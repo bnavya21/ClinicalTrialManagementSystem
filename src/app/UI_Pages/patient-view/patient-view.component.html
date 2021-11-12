@@ -25,11 +25,11 @@
             <input type = "date" name ="DOB" [(ngModel)]="patient1.date_of_birth" align="left"><br>            
             <label for="gender">Gender </label>
             <label for="male">Male </label>
-            <input type = "radio" name ="Gender" align="left">
+            <input type = "radio" name ="Gender" align="left" [(ngModel)]="patient1.gender" >
             <label for="female">Female </label>
-            <input type = "radio" name ="Gender" >
+            <input type = "radio" name ="Gender"  [(ngModel)]="patient1.gender" >
             <label for="other">Other </label>
-            <input type = "radio" name ="Gender" ><br>
+            <input type = "radio" name ="Gender"  [(ngModel)]="patient1.gender"  ><br>
             <label for="username">Username </label>
             <input type = "text" name ="Username"  [(ngModel)]="patient1.user_id" align="left"><br><br>
             <label for="password">Password </label>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Physician } from 'src/app/Models/physician';
 import { EmployeeServiceService } from 'src/app/Services/employee-service.service';
 
@@ -22,7 +23,8 @@ export class PhysicianRegisterComponent implements OnInit {
     department: '',
     role: ''
   }
-  constructor(private physicianService:EmployeeServiceService) { }
+  constructor(private physicianService:EmployeeServiceService,
+              private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -30,6 +32,7 @@ export class PhysicianRegisterComponent implements OnInit {
     console.log(this.physician);
     this.physicianService.registerPhysician(this.physician).subscribe(data=>{
       console.log(data);
+      this.router.navigateByUrl('/PhysicianLogin');
       
     });
   }

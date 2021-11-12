@@ -4,6 +4,7 @@ import { PatientusernameService } from 'src/app/DataShare/patientusername.servic
 import { CurrentPatientUserName } from 'src/app/Models/currentPatientUserName';
 import { Patient } from 'src/app/Models/patient';
 import { PatientServiceService } from 'src/app/Services/patient-service.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-patient-view',

@@ -23,6 +23,7 @@ import { AddMedicationComponent } from './UI_Pages/add-medication/add-medication
 import { TrialTitleDetailsComponent } from './UI_Pages/trial-title-details/trial-title-details.component';
 import { TrialManagerViewComponent } from './UI_Pages/trial-manager-view/trial-manager-view.component';
 import { TrialsReportComponent } from './UI_Pages/trials-report/trials-report.component';
+import { PatientsReportComponent } from './UI_Pages/patients-report/patients-report.component';
 
 const routes: Routes = [
   {
@@ -122,6 +123,10 @@ const routes: Routes = [
     {
       path:'TrialsReport',
       component:TrialsReportComponent
+    },
+    {
+      path:'PatientsReport',
+      component:PatientsReportComponent
     }
   
  

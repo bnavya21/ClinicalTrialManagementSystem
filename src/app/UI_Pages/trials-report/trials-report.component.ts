@@ -22,7 +22,7 @@ selectedTrialTitle(event:any){
   SelectedTrialTitle.title=event.target.value;
   console.log("selected trial title ");
   console.log(SelectedTrialTitle.title);
-  this.router.navigateByUrl('/PatientReport');
+  this.router.navigateByUrl('/PatientsReport');
 
 }
 
