@@ -83,5 +83,14 @@ export class EmployeeServiceService {
       params=params.append('name',name);
       return this.http.get(requestUrl,{params:params});
     }
+
+  //to send an email to the patients qualified for the trial
+  sendEmail(to:string,text:string):Observable<any>{
+    let requestUrl = this.api_url+'/vi/sendEmail';
+    let params = new HttpParams();
+    params=params.append('to',to);
+    params=params.append('text',text);
+    return this.http.get(requestUrl,{params:params});
+  }
 }
  

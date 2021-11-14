@@ -21,5 +21,12 @@ export class PatientsReportComponent implements OnInit {
       this.patients=data;
     });
   }
+  sendemail(to:string){
+    this.title=SelectedTrialTitle.title;
+    let tt="You are qualified for the clinical trial "+this.title;
+    this.employeeService.sendEmail(to,tt).subscribe(data=>{
+      console.log("Email Sent");
+    })
+  }
 
 }

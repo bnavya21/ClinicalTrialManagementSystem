@@ -18,6 +18,7 @@
            <td>{{patient.last_name}}</td>
            <td>{{patient.mobile}}</td>
            <td>{{patient.mail}}</td>
+           <td><button type="button" (click)="sendemail(patient.mail)">Send</button></td>
            
         </tr>
     </tbody>   
