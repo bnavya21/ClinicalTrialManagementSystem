@@ -11,11 +11,15 @@
     <div class="table">
       <table class="table table:striped">
           <thead>
-              <th>Medicine ID</th>
+              <!-- <th>Medicine ID</th> -->
               <th>Medicine Name</th>
               <th>prescribed doctor's name</th>
           </thead>
           <tbody>
+            <tr *ngFor="let pm of pms">
+            <td>{{pm.name}}</td>
+            <td>{{pm.first_name}},{{pm.last_name}}</td> 
+            </tr>
           </tbody>
       </table>
     

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PatientusernameService } from 'src/app/DataShare/patientusername.service';
+import { CustomMedication } from 'src/app/Models/CustomMedication';
 import { PatientMedication } from 'src/app/Models/PatientMedication';
 import { PatientServiceService } from 'src/app/Services/patient-service.service';
 
@@ -12,7 +13,8 @@ import { PatientServiceService } from 'src/app/Services/patient-service.service'
 export class PatientMedicationsComponent implements OnInit {
   currentPatientusername="";
   mrn="";
-  pms:PatientMedication[]=[];
+ 
+  pms:CustomMedication[]=[];
   constructor(private patientService:PatientServiceService,
               private patientusername:PatientusernameService,
               ) { }

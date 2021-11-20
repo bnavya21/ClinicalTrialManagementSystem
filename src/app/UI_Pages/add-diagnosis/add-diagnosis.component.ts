@@ -39,6 +39,7 @@ export class AddDiagnosisComponent implements OnInit {
       console.log(this.pd.mrn);
     this.employeesService.addDiagnosis(this.pd).subscribe(data=>{
       console.log(this.pd);
+      alert("Diagnosis is added");
     })
   })
 
