@@ -11,6 +11,7 @@ import { EmployeeServiceService } from 'src/app/Services/employee-service.servic
 })
 export class AddDiagnosisComponent implements OnInit {
 
+ 
   pd: PatientDiagnosis={mrn:"",emp_id:"",diag_id:"",DiagnosisDate:new Date()};
   currentEmployeeUserName="";
   selectedPatient="";
@@ -18,6 +19,8 @@ export class AddDiagnosisComponent implements OnInit {
   constructor(private employeeusername:EmployeeusernameService,
               private employeesService:EmployeeServiceService,
               private selectedpatientmrn:SelectedPatientmrnService) { }
+              adddiag=false;
+              blankpage=true;
 
   ngOnInit(): void {
     this.employeeusername.CurrentEmployeeUserName.subscribe(data=>{
@@ -29,22 +32,35 @@ export class AddDiagnosisComponent implements OnInit {
       
     })
     });
-  }
-  
-  onAdd(){
+    /*** */
     this.selectedpatientmrn.selectedPatientmrn.subscribe(data=>{
       this.selectedPatient=data;
       this.pd.mrn=this.selectedPatient;
       console.log("this is th mrn");
       console.log(this.pd.mrn);
-    this.employeesService.addDiagnosis(this.pd).subscribe(data=>{
-      console.log(this.pd);
-      alert("Diagnosis is added");
-    })
+    });
+  }
+  
+  onAdd(){
+  //   this.selectedpatientmrn.selectedPatientmrn.subscribe(data=>{
+  //     this.selectedPatient=data;
+  //     this.pd.mrn=this.selectedPatient;
+  //     console.log("this is th mrn");
+  //     console.log(this.pd.mrn);
+  //   this.employeesService.addDiagnosis(this.pd).subscribe(data=>{
+  //     console.log(this.pd);
+  //     alert("Diagnosis is added");
+  //   })
+  // })
+
+  this.employeesService.addDiagnosis(this.pd).subscribe(data=>{
+    console.log(this.pd);
+    alert("Diagnosis is added");
   })
 
   }
   onback(){
+   
     
   }
 

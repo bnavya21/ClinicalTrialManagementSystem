@@ -31,7 +31,7 @@ export class PatientServiceService {
   }
   
   getPatientDiagnosis(mrn:string):Observable<any>{
-    let requsetUrl=this.api_url+'/vi/PatientDiagnosis';
+    let requsetUrl=this.api_url+'/vi/patientdiag';
     let params = new HttpParams();
     params = params.append('mrn',mrn);
     return this.http.get(requsetUrl,{params:params});

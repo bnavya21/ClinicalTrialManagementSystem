@@ -48,14 +48,27 @@ input[type=text]{
     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 20px;
+    position :relative;
+    left:490px;
+    
+    
 }
-.button1 {background-color:black;} 
+.button1 {background-color:rgb(8, 139, 129);} 
 .button1:hover {
     background-color: #4CAF50;
     color: white;
 }
-.button2 {background-color:black;} 
+.button2 {background-color:rgb(8, 139, 129);} 
 .button2:hover {
     background-color: #4CAF50;
     color: white;
+}
+body{
+  background-image: url('/assets/diseasegroup.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:700px;
+    background-attachment:scroll;
 }

@@ -12,9 +12,17 @@ div.container{
    
     border-radius: 2px;
     box-sizing: border-box;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-left: 350px;
 }
 .buttons{
     padding: 30px;
+}
+body{
+    background-image: url('/assets/diseasegroup.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:700px;
+    background-attachment:scroll;
 }

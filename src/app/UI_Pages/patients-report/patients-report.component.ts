@@ -26,6 +26,7 @@ export class PatientsReportComponent implements OnInit {
     let tt="You are qualified for the clinical trial "+this.title;
     this.employeeService.sendEmail(to,tt).subscribe(data=>{
       console.log("Email Sent");
+      alert("Email sent");
     })
   }
 

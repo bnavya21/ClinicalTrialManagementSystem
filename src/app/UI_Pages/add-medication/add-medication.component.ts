@@ -25,18 +25,21 @@ pm:PatientMedication={mrn:"",emp_id:"",med_id:""};
       console.log("this is th emp id");
       console.log(this.pm.emp_id);
   })
+})
+  this.selectedpatientmrn.selectedPatientmrn.subscribe(data=>{
+    this.selectedPatient=data;
+    this.pm.mrn=this.selectedPatient;
+    console.log("this is th mrn");
+    console.log(this.pm.mrn);
   })
   }
   onAdd(){
-    this.selectedpatientmrn.selectedPatientmrn.subscribe(data=>{
-      this.selectedPatient=data;
-      this.pm.mrn=this.selectedPatient;
-      console.log("this is th mrn");
-      console.log(this.pm.mrn);
+    
     this.employeesService.addMedication(this.pm).subscribe(data=>{
       console.log(this.pm);
+      alert("Medication is added");
     })
-  })
+  }
 
   }
-}
+

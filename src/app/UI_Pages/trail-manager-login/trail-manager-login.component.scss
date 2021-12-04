@@ -1,9 +1,10 @@
 .row1{
+    float:left;
     box-sizing: border-box;
     border-radius: 2px;
     width:400px;
     padding: 70px;
-    background-color: cornsilk;
+    background-color: rgb(173, 191, 196);
     border-width: 4px;
     border-color: darkgreen;
     border:solid rgba($color: #640707, $alpha: 1.0);
@@ -24,14 +25,25 @@ input[type=text] {
     margin: 10px;
   }
   input[type=submit]{
-    background-color: rgba($color: #dd7777, $alpha: 1.0);
+    background-color: rgba($color: #028394, $alpha: 1.0);
     width:100px;
     padding:10px;
     margin:10px 30px 10px 50px;
     border-radius: 10px;
 }
 body{
-    background-color: darkgrey;
-    width:auto;
-    padding: 90px;
+    // background-color: darkgrey;
+    width:100%;
+    height:600px;
+    background-size: cover;
+    padding:60px;
+    background-image: url('/assets/trial2.jpg');
+    background-repeat: no-repeat;
+ 
+    
+}
+.con3 img{
+  float:right;
+  padding-top:55px;
+
 }

@@ -22,9 +22,10 @@
             <label for="mail">Mail </label>
             <input type = "text" name ="Mail"  [(ngModel)]="patient1.mail"align="left"><br>
             <label for="dob">Date of birth </label>
-            <input type = "date" name ="DOB" [(ngModel)]="patient1.date_of_birth" align="left"><br>            
+            <!-- <input type = "date" name ="DOB"  [(ngModel)]="patient1.date_of_birth" align="left"><br>              -->
+            <input type="date" [ngModel]="patient1.date_of_birth|date:'yyyy-MM-dd'" (ngModelChange)="patient1.date_of_birth=$event" align="left"><br> 
             <label for="gender">Gender </label>
-            <input type = "text" name ="Gender"  [(ngModel)]="patient1.gender"align="left"><br>
+            <input type = "text" name ="Gender"  [(ngModel)]="patient1.gender" align="left"><br>
             <!-- <label for="male">Male </label>
             <input type = "radio" name ="Gender" align="left" [(ngModel)]="patient1.gender" >
             <label for="female">Female </label>

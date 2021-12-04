@@ -32,6 +32,13 @@
 
 div.container{
   padding: 50px;
+  background-image: url('/assets/doctor.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:1080px;
+    height:600px;
+    background-attachment:fixed;
+    
 }
 input[type=text]{
   margin:10px;

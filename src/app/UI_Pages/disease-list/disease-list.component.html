@@ -1,6 +1,9 @@
 <html>
+    <body>
+
+    
     <div class="container">
-        <h4 style="padding-left: 90px;">{{diseaseGroup}}   Diseases List</h4>
+        <h4 style="padding-left: 30px;">{{diseaseGroup}}   Diseases List</h4>
         <div class ="buttons">
             <ul *ngFor="let disease of diseases">
                 <button type="button"(click)="displaytrials(disease)" >{{disease}}</button>
@@ -9,4 +12,5 @@
             
         </div>
     </div>
+</body>
 </html>

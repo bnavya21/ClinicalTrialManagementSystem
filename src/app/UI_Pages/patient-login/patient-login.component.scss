@@ -1,13 +1,14 @@
 .row1{
-    
+    float:left;
     box-sizing: border-box;
     border-radius: 2px;
     width:400px;
     padding: 70px;
-    background-color: cornsilk;
+    background-color:rgb(144, 198, 202);
     border-width: 4px;
     border-color: darkgreen;
     border:solid rgba($color: #640707, $alpha: 1.0);
+    
     
 }
 input[type=text] {
@@ -31,8 +32,20 @@ input[type=text] {
     margin:10px 40px 10px 50px;
 }
 body{
-    background-color: darkgrey;
-    width:auto;
-    padding: 90px;
+  width:100%;
+  height:100%;
+  background-size: cover;
+  padding: 90px;
+  background-image: url('/assets/patient1.jpeg');
+  background-repeat: no-repeat;
+    
+    
+}
+.con1 img{
+
+  float:right;
+  padding-top: 35px;
+  border-color: wheat;
+ 
 }
   

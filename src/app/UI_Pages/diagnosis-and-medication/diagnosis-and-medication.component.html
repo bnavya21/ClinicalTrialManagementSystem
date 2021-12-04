@@ -2,6 +2,7 @@
   <div class="button">
    <!-- <input type="button" name="back" value="back" (click)="backclicked()"> </div> -->
    <button (click)="backButtonClicked()">Back</button>
+  </div>
 <div class="diagnosis">
     <div class="button1"> <input type="button" name="button1" value="Add Diagnosis" (click)="adddiagnosisclicked()"></div>
    
@@ -13,9 +14,9 @@
         </thead>
         <tbody>
           <tr *ngFor="let pd of pds">
-              <td>{{pd.diag_id}}</td>
-             <td>{{pd.emp_id}}</td>
-             <td>{{pd.DiagnosisDate}}</td>
+              <td>{{pd.last_name}}</td>
+             <td>{{pd.first_name}},{{pd.description}}</td>
+             <td>{{pd.diagnosisdate|date:'yyyy-MM-dd'}}</td>
           </tr>
         </tbody>
       </table>
@@ -24,18 +25,18 @@
     <div class="button2"> <input type="button" name="button2" value="Add Medication" (click)="addmedicationclicked()"></div>
     <table class="table table:striped">
         <thead>
-            <th>Medicine id</th>
+            <th>Medicine Name</th>
             <th>Doctor Prescribed</th>
         </thead>
         <tbody>
           <tr *ngFor="let pm of pms">
-              <td>{{pm.med_id}}</td>
-              <td>{{pm.emp_id}}</td>
+              <td>{{pm.name}}</td>
+              <td>{{pm.first_name}},{{pm.last_name}}</td>
           </tr>
         </tbody>
       </table>
 </div>
-</div>
+
 <div [ngClass]="{adddiagnosis}">
 <app-add-diagnosis [hidden]="adddiagnosis"></app-add-diagnosis>
 </div>

@@ -3,6 +3,8 @@ import { PatientusernameService } from 'src/app/DataShare/patientusername.servic
 import { SelectedPatientmrnService } from 'src/app/DataShare/selected-patientmrn.service';
 import { ShowPatientListService } from 'src/app/DataShare/show-patient-list.service';
 import { PatientDiagnosis } from 'src/app/Models/patient-diagnosis';
+import { patientdiag } from 'src/app/Models/patientdiag';
+import { patientmed } from 'src/app/Models/patientmed';
 import { PatientMedication } from 'src/app/Models/PatientMedication';
 import { SelectedPatientMrn } from 'src/app/Models/selectPatientmrn';
 import { PatientServiceService } from 'src/app/Services/patient-service.service';
@@ -14,8 +16,8 @@ import { PatientServiceService } from 'src/app/Services/patient-service.service'
 })
 export class DiagnosisAndMedicationComponent implements OnInit {
 
-  pms:PatientMedication[]=[];
-  pds:PatientDiagnosis[]=[];
+  pms:patientmed[]=[];
+  pds:patientdiag[]=[];
   selectedPatient="";
   constructor(private patientService:PatientServiceService,
               private showPatientlistService: ShowPatientListService,
@@ -56,9 +58,10 @@ export class DiagnosisAndMedicationComponent implements OnInit {
       this.adddiagnosis=!data;
     });}
     addmedicationclicked(){
-      this.diagandmed=true;
-      this.addmedication=false;
-    }
+      this.showPatientlistService.CurrentShowPatientListValue.subscribe(data=>{
+      this.diagandmed=!data;
+      this.addmedication=!data;
+    });}
 
     backButtonClicked(){
       this.patientlist = false;

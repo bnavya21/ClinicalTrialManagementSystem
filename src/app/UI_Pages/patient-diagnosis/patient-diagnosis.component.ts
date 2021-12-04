@@ -4,6 +4,7 @@ import { PatientServiceService } from 'src/app/Services/patient-service.service'
 import { BrowserModule} from '@angular/platform-browser'
 import { HttpClient } from '@angular/common/http';
 import { PatientusernameService } from 'src/app/DataShare/patientusername.service';
+import { patientdiag } from 'src/app/Models/patientdiag';
 
 
 @Component({
@@ -13,7 +14,7 @@ import { PatientusernameService } from 'src/app/DataShare/patientusername.servic
 })
 export class PatientDiagnosisComponent implements OnInit {
 
-pds:PatientDiagnosis[]=[];
+pds:patientdiag[]=[];
 currentPatientusername="";
 mrn="";
   constructor(private patientService:PatientServiceService,

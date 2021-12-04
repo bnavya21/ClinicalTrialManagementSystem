@@ -1,5 +1,6 @@
 
 <html>
+  <body>
     <!-- <div class="topnav">
       <a href="#profile" href="/PatientView" >Profile</a>
       <a class="active" href="#diagnosis" >Diagnosis</a>
@@ -11,17 +12,18 @@
     <div class="table">
     <table class="table table:striped">
         <thead>
-            <th>Diagnosis id</th>
+            <th>Diagnosis Name</th>
             <th>Consulted Doctor</th>
             <th>Diagnosis Date</th>
         </thead>
         <tbody>
           <tr *ngFor="let pd of pds">
-              <td>{{pd.diag_id}}</td>
-             <td>{{pd.emp_id}}</td>
-             <td>{{pd.DiagnosisDate}}</td>
+              <td>{{pd.last_name}}</td>
+             <td>{{pd.description}},{{pd.first_name}}</td>
+             <td>{{pd.diagnosisdate|date:'yyyy-MM-dd'}}</td>
           </tr>
         </tbody>
       </table>
     </div>
+  </body>
 </html>

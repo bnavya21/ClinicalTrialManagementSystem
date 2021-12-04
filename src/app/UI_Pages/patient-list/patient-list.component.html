@@ -1,15 +1,15 @@
 <html>
     
 
-
+<body>
 <div [ngClass]="{ishide}"> 
 <!-- <div> -->
-    <app-diagnosis-and-medication [hidden]="ishide"></app-diagnosis-and-medication>  
+<app-diagnosis-and-medication [hidden]="ishide"></app-diagnosis-and-medication>  
 </div>
  <div [ngClass]="{patientlist}" >  
 <!-- <div>     -->
 <div class="table" [hidden]="patientlist"> 
-    <h3 style ="padding-left: 40%;padding-top: 20px;">Patients List</h3>
+    <h3 style ="padding-left: 40%;padding-top: 2px;">Patients List</h3>
 <table class="table table:striped">
     <thead>
         <th>MRN</th>
@@ -32,6 +32,6 @@
 </table>
 </div>
 </div>
-
+</body>
 </html>
 <!-- <app-diagnosis-and-medications [hidden]></app-diagnosis-and-medications> -->

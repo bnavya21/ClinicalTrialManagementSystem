@@ -9,5 +9,30 @@ input{
 }
 
 body{
-    padding-left: 320px;
+    
+    padding: 50px;
+    background-image: url('/assets/doctor.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width:2000px;
+      height:900px;
+      background-attachment:fixed;
+  
 }
+
+label{
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 150px;
+    vertical-align: top;
+  }
+  input[type=button]{
+    margin:15px;
+    background-color: rgba($color: #4469b9, $alpha: 1.0);
+    width:100px;
+    padding:10px;
+    margin:10px 40px 10px 50px;
+  
+  }

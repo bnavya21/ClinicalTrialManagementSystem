@@ -31,7 +31,13 @@
 }
 
 div.container{
-  padding: 50px;
+  padding: 30px;
+  width:800px;
+  height:100%;
+  background-size: cover;
+  // padding: 90px;
+  background-image: url('/assets/patient3.jpg');
+  background-repeat: no-repeat;
 }
 .buttonStyle{
   min-height: 50px;

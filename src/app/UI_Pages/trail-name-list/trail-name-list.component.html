@@ -1,6 +1,7 @@
 
 
 <html>
+    <body>
     <h4 style="padding-left: 30%; padding-top: 50px;">Clinical Trials List for {{diseaseName}}</h4>
     <div class="container">
         <ul *ngFor="let trial of trials">
@@ -11,4 +12,5 @@
         <b>Duration:</b><label for="Duration">{{trial.duration}}</label>
     </ul>
     </div>
+</body>
 </html>

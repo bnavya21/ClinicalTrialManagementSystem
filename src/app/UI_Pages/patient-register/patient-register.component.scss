@@ -22,3 +22,20 @@ label{
     width: 150px;
     vertical-align: top;
   }
+  body{
+   
+    width:100%;
+    height:650px;
+    background-size: cover;
+    // padding: 90px;
+    background-image: url('/assets/patient3.jpg');
+    background-repeat: no-repeat;
+  }
+  input[type=button]{
+    margin:15px;
+    background-color: rgba($color: #3b3191, $alpha: 1.0);
+    width:100px;
+    padding:10px;
+    margin:10px 40px 10px 50px;
+  
+  }

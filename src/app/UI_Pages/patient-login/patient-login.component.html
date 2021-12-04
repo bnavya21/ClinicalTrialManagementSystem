@@ -1,6 +1,7 @@
 <html>
     <body>
         <div class = "row1">
+            
             <h4 style="font-family: 'Lucida';font-size:32px;">User Login</h4>
             <form [formGroup]="patientLoginForm" (ngSubmit)="login()">
             <input  type="text" formControlName = "userid" placeholder="Enter your username"><br>
@@ -9,5 +10,10 @@
             New User? <a href="http://localhost:4200/PatientRegister">Register Here</a>
         </form>
         </div>
+    
+         <!-- <div class="con1">
+            <h4 style="padding-left: 680px;font-family: 'Lucida';"> We care for you </h4>
+         <img src = '/assets/picture.png' width="52%" height="auto" />
+         </div>  -->
     </body>
 </html>

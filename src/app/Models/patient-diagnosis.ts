@@ -3,4 +3,5 @@ export class PatientDiagnosis {
     diag_id!:string;
     emp_id!:string;
     DiagnosisDate!:Date;
+    
 }

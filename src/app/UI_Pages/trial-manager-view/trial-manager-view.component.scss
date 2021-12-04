@@ -1,0 +1,39 @@
+.button{
+    border:black;
+    color:rgb(73, 236, 174);
+    padding:15px 20px;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    position :relative;
+    left:320px;
+    
+    
+}
+.button1 {background-color:black;} 
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.button2 {background-color:black;} 
+.button2:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.button3 {background-color:black;} 
+.button3:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+body{
+    background-image: url('/assets/clinicaltrial.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
